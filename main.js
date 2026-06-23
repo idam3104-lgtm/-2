@@ -122,21 +122,21 @@ canvas.addEventListener(
 
             if (
 
-                mouseX >
-                bird.x &&
+    mouseX >
+    bird.x - 25 &&
 
-                mouseX <
-                bird.x +
-                bird.width &&
+    mouseX <
+    bird.x +
+    bird.width + 25 &&
 
-                mouseY >
-                bird.y &&
+    mouseY >
+    bird.y - 25 &&
 
-                mouseY <
-                bird.y +
-                bird.height
+    mouseY <
+    bird.y +
+    bird.height + 25
 
-            ) {
+) {
 
                 bird.hp -=
                     player.damage;
