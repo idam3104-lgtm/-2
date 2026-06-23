@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwi Hunter 2D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🥝 Kiwi Hunter 2D</h1>
+
+    <div class="stats">
+        <span>💰 เงิน: <span id="money">0</span></span>
+        <span>⭐ รีเบิร์ธ: <span id="rebirths">0</span></span>
+        <span>🎯 ยิงแล้ว: <span id="kills">0</span></span>
+    </div>
+</header>
+
+<div class="game-container">
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div class="side-panel">
+
+        <div class="panel">
+            <h2>📋 เควส</h2>
+
+            <p id="questText">
+                ยิงนก 25 ตัว (0/25)
+            </p>
+
+            <button id="claimQuest">
+                รับรางวัล
+            </button>
+        </div>
+
+        <div class="panel">
+            <h2>🛒 ร้านค้า</h2>
+
+            <button id="buyDamage">
+                เพิ่มดาเมจ (100)
+            </button>
+
+            <button id="buyAuto">
+                Auto Shoot (500)
+            </button>
+
+            <button id="buyMoney">
+                เงิน x2 (1000)
+            </button>
+        </div>
+
+        <div class="panel">
+            <h2>🐾 สัตว์เลี้ยง</h2>
+
+            <button id="buyPet">
+                Baby Kiwi (2000)
+            </button>
+
+            <p id="petStatus">
+                ไม่มีสัตว์เลี้ยง
+            </p>
+        </div>
+
+        <div class="panel">
+            <h2>⭐ รีเบิร์ธ</h2>
+
+            <button id="rebirthBtn">
+                รีเบิร์ธ (10000)
+            </button>
+        </div>
+
+        <div class="panel">
+            <h2>🌎 แมพ</h2>
+
+            <select id="mapSelect">
+                <option value="forest">Forest</option>
+                <option value="snow">Snow</option>
+                <option value="lava">Lava</option>
+                <option value="space">Space</option>
+            </select>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="save.js"></script>
+<script src="shop.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
