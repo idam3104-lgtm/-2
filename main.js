@@ -64,9 +64,9 @@ function spawnBird() {
                 100
             ),
 
-        width: 40,
+        width: 80,
 
-        height: 40,
+        height: 80,
 
         speed:
             type.speed,
